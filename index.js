@@ -4,6 +4,9 @@
 
 function displayPosts(posts) {
     const postContainer = document.getElementById('post-list')
+
+    postContainer.innerHTML = '';
+
     posts.forEach(post => {
         const postElement = document.createElement('li')
 
